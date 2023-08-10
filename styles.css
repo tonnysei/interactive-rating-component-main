@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+
+body {
+  font-family: Overpass;
+  color: hsl(0, 0%, 100%);
+  background-color: black;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+section {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem;
+  background:  linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%)) ;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero__logo {
+  background-color: hsla(25, 97%, 53%, 0.2);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero__title {
+  font-weight: 700
+}
+
+.hero__description {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.4rem;
+}
+
+.hero__rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero__rating-btn {
+  background-color: hsla(216, 12%, 54%, 0.2);
+  color: hsl(217, 12%, 63%);
+  align-self: center;
+  text-align: center;
+  padding: 1.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: color 0.6s, background-color 0.6s;
+}
+
+.hero__rating-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.isToggled {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+  align-self: center;
+  text-align: center;
+  padding: 1.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__submit-btn {
+  align-self: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  cursor: pointer;
+  transition: color 0.6s, background-color 0.6s;
+}
+
+.hero__submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.response__logo {
+  align-self: center;
+}
+
+.response__result {
+  align-self: center;
+  padding: 0.6rem 1.4rem;
+  background-color: hsla(25, 97%, 53%, 0.2);
+  color: hsl(25, 97%, 53%);
+  border-radius: 2rem;
+}
+
+.response__title {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.response__description {
+  align-self: center;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 1.4rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 41%, 58%); }
+
+@media screen and (max-width: 500px) {
+  section {
+    width: 18rem;
+    height: 22rem;
+  }
+
+  .hero__logo {
+    padding: 0.6rem;
+  }
+
+  .hero__rating-btn {
+    padding: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .isToggled {
+    padding: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .hero__submit-btn {
+    padding: 0.6rem;
+    border-radius: 2rem;
+  }
+
+  .response__result {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+
+  .response__title {
+    font-size: 1.6rem;
+  }
+
+  .response__description {
+    font-size: 12px;
+  }
+}
+
