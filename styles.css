@@ -1,3 +1,17 @@
+:root {
+  /* Primary */
+
+--Orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +21,7 @@
 
 body {
   font-family: Overpass;
-  color: hsl(0, 0%, 100%);
+  color: var(--White);
   background-color: black;
 }
 
@@ -28,7 +42,7 @@ section {
   align-items: flex-start;
   justify-content: space-around;
   padding: 2rem;
-  background:  linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%)) ;
+  background: linear-gradient(180deg, var(--Dark-Blue), var(--Very-Dark-Blue)) ;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -53,7 +67,7 @@ section {
 }
 
 .hero__description {
-  color: hsl(217, 12%, 63%);
+  color: var(--Light-Grey);
   line-height: 1.4rem;
 }
 
@@ -65,7 +79,7 @@ section {
 
 .hero__rating-btn {
   background-color: hsla(216, 12%, 54%, 0.2);
-  color: hsl(217, 12%, 63%);
+  color: var(--Light-Grey);
   align-self: center;
   text-align: center;
   padding: 1.2rem;
@@ -79,13 +93,13 @@ section {
 }
 
 .hero__rating-btn:hover {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--Orange);
+  color: var(--White);
 }
 
 .isToggled {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 12%, 63%);
+  color: var(--White);
+  background-color: var(--Light-Grey);
   align-self: center;
   text-align: center;
   padding: 1.2rem;
@@ -104,16 +118,16 @@ section {
   width: 100%;
   padding: 0.8rem;
   border-radius: 2rem;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(25, 97%, 53%);
+  color: var(--White);
+  background-color: var(--Orange);
   border: none;
   cursor: pointer;
   transition: color 0.6s, background-color 0.6s;
 }
 
 .hero__submit-btn:hover {
-  color: hsl(25, 97%, 53%);
-  background-color: hsl(0, 0%, 100%);
+  color: var(--Orange);
+  background-color: var(--White);
 }
 
 .response__logo {
@@ -124,7 +138,7 @@ section {
   align-self: center;
   padding: 0.6rem 1.4rem;
   background-color: hsla(25, 97%, 53%, 0.2);
-  color: hsl(25, 97%, 53%);
+  color: var(--Orange);
   border-radius: 2rem;
 }
 
@@ -136,7 +150,7 @@ section {
 .response__description {
   align-self: center;
   text-align: center;
-  color: hsl(217, 12%, 63%);
+  color: var(--Light-Grey);
   font-size: 15px;
   line-height: 1.4rem;
 }
